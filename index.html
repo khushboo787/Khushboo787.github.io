@@ -1,70 +1,333 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="logo">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khushboo Kumari | Java Backend Developer</title>
-    <link rel="stylesheet" href="portfoliyo.css">
+    <title>KHUSHBOO</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="https://kit.fontawesome.com/80c6070dea.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About </a></li>
-                <li><a href="#skills">Skill</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="Khushboo_Kumari_Resume.pdf">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <div class="intro">
-            <h1>Khushboo Kumari</h1>
-            <h2>Java Backend Developer</h2>
+    
+    <nav id="nav-menu">
+        <h1 id="logo" class="testing">KHUSHBOO</h1>
+        <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="referresume"><a class="navresume"
+                    href="https://drive.google.com/file/d/1XeYFxxmen0CLAkXI_kcZfY1qd0qAcbTa/view?usp=sharing"
+                    download>Resume</a>
+            </li>
+           
+    </nav>
+    <div id="home">
+        <div class="nav-link home">
+            <div class="header-text">
+                <!-- <p id="location"></p> -->
+                <h3>Hi I'm Khushboo Kumari</h3>
+                <h2 id="slidertext">I'm Java Backend Developer<span id="slide-text"></span></h2>
+                <a class="btn btn2 referresume1" id="resumedown"
+                    href="https://drive.google.com/uc?export=download&id=1Kwk2OVHLmQ_0n8GX9D8ihsDQV0QLuPVM"
+                    download>Download CV</a>
+            </div>
         </div>
-    </section>
-
-    <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>
-               A self-disciplined and result-oriented Java backend developer with a
-                solid foundation in programming, technical expertise in Java, SQL,
-                Spring, and Spring Boot. Looking forward to working with a
-                progressive organization with opportunities to work on significant
-                projects.
-            </p>
-            <!-- Add more information about yourself here -->
-            <button><a href="Khushboo_Kumari_Resume.pdf" target="_blank">Resume</a></button>
+        <div class="img-wrapper" id="image">
+            <img src="./image/Khushboo787.jpg" alt="">
         </div>
-    </section>
-
-    <section id="skills">
-        <div class="skills-content">
-            <h2>Skills</h2>
-            <!-- Add skill images here -->
+    </div>
+    <!-- ////////////Here We will Add about -->
+    <div id="about">
+        <div class="nav-link about">
+            <div class="row">
+                <!-- <div class="about-col-1">
+                    <img src="./image/user.png">
+                </div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-text">A passionate Developer proficient in Web architecture, JAVA, JavaScript, HTML,
+                        CSS, Data
+                        Structures, and Algorithms. Approachable team leader, always keen to take the goal-oriented path
+                        to complete the task at hand. Strongly interested in obtaining a Developer position to create
+                        scalable products and work on providing a wow-user experience trough them.</p>
+                    <div class="tab-titels">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Java Devloper</span><br>Java Backend Devloper</li>
+                            <li><span>Java Devloper</span><br>Spring-Boot Devloper</li>
+                            <li><span>JavaScript Devloper</span><br>JavaScript Web Devloper</li>
+                            <li><span>Web Devlopment</span><br>HTML/CSS/JavaScript Devloper</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Java Backend</span><br>1200+ hours of coding</li>
+                            <li><span>JavaScript</span><br>In JavaScript wrote 10000+ lines of Code</li>
+                            <li><span>Web Devlopment</span><br>In HTML/CSS/JavaScript wrote 500000+ lines of code</li>
+                            <li><span>DSA</span><br>In DSA solved 700+ problem</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Full Stack Developer Oct 2022 </span><br>Masai School</li>
+                          
+                            <li><span>intermediate (10+2)</span><br>Jawahar Navodaya Vidyalaya, Darbhanga</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+    <!-- /////////////////Tech Skills -->
+    <div id="skills">
+        <div class="nav-link skills">
+            <h1 class="sub-title">My Tech Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>
+                        JavaScript
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>
+                        HTML
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>
+                        CSS
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>
+                        JAVA
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>
+                        Spring Boot
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-aws"></i>
+                    <h2>
+                        AWS
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h2>
+                        Git
+                    </h2>
+                </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <!-- Project 1 details -->
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>
+                        SQL
+                    </h2>
+                </div>
+                <div>
+                    <iconify-icon style="margin-bottom: 10px;" icon="simple-icons:hibernate" width="55" height="55">
+                    </iconify-icon>
+                    <h2>
+                        Hibernate
+                    </h2>
+                </div>
+                <div>
+                    <iconify-icon style="margin-bottom: 10px;" icon="cib:visual-studio-code" width="55" height="55">
+                    </iconify-icon>
+                    <h2>
+                        VS Code
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>
+                        GitHub
+                    </h2>
+                </div>
+                <div>
+                    <iconify-icon style="margin-bottom: 10px;" icon="cib:spring" width="55" height="55"></iconify-icon>
+                    <h2>
+                        STS
+                    </h2>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-            <!-- Project 2 details -->
-        </div>
-        <!-- Add more project cards here -->
-    </section>
 
-    <section id="contact">
-        <div class="contact-content">
-            <h2>Contact & Resume</h2>
-            <p>
-                Phone: +9126729823 <br>
-                Email: adhirajha@gmail.com <br>
+    </div>
+    <!-- -----------------------------portfolio -->
+
+    <div id="projects">
+        <div class="nav-link projects">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+
+            </div>
+            <a href="#portfolio" class="btn btn3">See more</a>
+        </div>
+    </div>
+    <div>
+
+        <h1 class="sub-title">My GitHub Stats</h1>
+    </div>
+
+    <div class="githubmain">
+
+        <div class="githubstats">
+            <a href="https://github.com/khushboo787"><img style="width: 100%;"
+                    src="https://camo.githubusercontent.com/951d7c4c8acc680d5e90d5cb7808ea2a23a1c16c560a41fe01fc7aaa132fc33d/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d6b68757368626f6f3738372673686f775f69636f6e733d74727565266c6f63616c653d656e"
+                    alt="Khushboo GitHub stats" /></a>
+
+            <a href="https://github.com/khushboo787"><img style="width: 100%;"
+                    src="https://camo.githubusercontent.com/78eef55966ddeb23cbff80f936b4841944dd53584947a8597b3d094af62e0911/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d6b68757368626f6f3738372673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374" /></a>
+
+        </div>
+       
+    </div>
+
+
+    <div class="calendar">
+
+        Loading the data just for you.
+    </div>
+    <!-- ////////////////Contact////////// -->
+    <div id="contact">
+        <div class="nav-link contact">
+            <h1 class="sub-title">Contact</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub.titale">
+                        Contact Me
+                    </h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>adhirajha204@gmail.com</p>
+                    <p> <i class="fa-sharp fa-solid fa-phone"></i>+91 9026729823</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.linkedin.com/in/khushboo-kumari-3a6641256/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a target="_blank" href="https://github.com/khushboo787"><i
+                                class="fa-brands fa-github"></i></i></a>
+                        <a target="_blank" href="https://github.com/khushboo787/Khushboo787.github.io"><i
+                                class="fa-solid fa-code-fork"></i></i></a>
+                    </div>
+                    <a class="btn btn2 referresume2"
+                        href="https://drive.google.com/file/d/1XeYFxxmen0CLAkXI_kcZfY1qd0qAcbTa/view?usp=sharing"
+                        download>Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form class="loading" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea minlength="5" required name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <span id="msg"></span>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Khushboo.<i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script src="./scripts/index.js"></script>
+
+
+<script>
+   
+
+    document.querySelector(".referresume").addEventListener("click", function () {
+        window.open("https://drive.google.com/file/d/1XeYFxxmen0CLAkXI_kcZfY1qd0qAcbTa/view?usp=sharing", "_blank");
+       
+    });
+
+    document.querySelector(".referresume1").addEventListener("click", function () {
+        window.open("https://drive.google.com/file/d/1XeYFxxmen0CLAkXI_kcZfY1qd0qAcbTa/view?usp=sharing", "_blank");
+      
+    });
+
+    document.querySelector(".referresume2").addEventListener("click", function () {
+        window.open("https://drive.google.com/file/d/1XeYFxxmen0CLAkXI_kcZfY1qd0qAcbTa/view?usp=sharing", "_blank");
+       
+    });
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxI1_DecmZUSKi-2iFueb-3dAxuFkQejHwsiWCavksgxF5sT6F2tWyHYufmwTgJPxD7zA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        msg.innerText = "Sending..."
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerText = "Message sent successfully"
+
+                setTimeout(() => {
+                    msg.innerText = "";
+                }, 4000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+
+</script>
+<script>
+    GitHubCalendar(".calendar", "khushbookumari", {
+        responsive: true,
+        global_stats: false,
+        tooltips: true,
+    });
+
+    $(".counting").each(function () {
+        var $this = $(this),
+            countTo = $this.attr("data-count");
+
+        $({ countNum: $this.text() }).animate(
+            {
+                countNum: countTo,
+            },
+            {
+                duration: 3000,
+                easing: "linear",
+                step: function () {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                    $this.text(this.countNum);
+                },
+            }
+        );
+    });
+</script>
