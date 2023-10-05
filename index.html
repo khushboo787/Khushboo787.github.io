@@ -30,7 +30,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li class="referresume"><a class="navresume"
+            <li class="referresume"><a id="navresume"class="nav-link resume"
                     href="https://drive.google.com/file/d/1XeYFxxmen0CLAkXI_kcZfY1qd0qAcbTa/view?usp=sharing"
                     download>Resume</a>
             </li>
@@ -40,15 +40,15 @@
         <div class="nav-link home">
             <div class="header-text">
                 <!-- <p id="location"></p> -->
-                <h3>Hi I'm Khushboo Kumari</h3>
-                <h2 id="slidertext">I'm Java Backend Developer<span id="slide-text"></span></h2>
+                <h3 id="user-detail-name">Hi I'm Khushboo Kumari</h3>
+                <h2  id="user-detail-intro">I'm Java Backend Developer<span id="slide-text"></span></h2>
                 <a class="btn btn2 referresume1" id="resumedown"
                     href="https://drive.google.com/uc?export=download&id=1Kwk2OVHLmQ_0n8GX9D8ihsDQV0QLuPVM"
                     download>Download CV</a>
             </div>
         </div>
-        <div class="img-wrapper" id="image">
-            <img src="./image/Khushboo787.jpg" alt="">
+        <div   id="image">
+            <img  src="./image/Khushboo787.jpg" alt="" class="home-img">
         </div>
     </div>
     <!-- ////////////Here We will Add about -->
@@ -226,12 +226,12 @@
                     <h1 class="sub.titale">
                         Contact Me
                     </h1>
-                    <p> <i class="fa-solid fa-paper-plane"></i>adhirajha204@gmail.com</p>
-                    <p> <i class="fa-sharp fa-solid fa-phone"></i>+91 9026729823</p>
+                    <p id="contact-email"> <i class="fa-solid fa-paper-plane"></i>adhirajha204@gmail.com</p>
+                    <p  id="contact-phone" > <i class="fa-sharp fa-solid fa-phone"></i>+91 9026729823</p>
                     <div class="social-icons">
-                        <a target="_blank" href="https://www.linkedin.com/in/khushboo-kumari-3a6641256/"><i
+                        <a  id="contact-linkedin" target="_blank" href="https://www.linkedin.com/in/khushboo-kumari-3a6641256/"><i
                                 class="fa-brands fa-linkedin-in"></i></a>
-                        <a target="_blank" href="https://github.com/khushboo787"><i
+                        <a  id="contact-github" target="_blank" href="https://github.com/khushboo787"><i
                                 class="fa-brands fa-github"></i></i></a>
                         <a target="_blank" href="https://github.com/khushboo787/Khushboo787.github.io"><i
                                 class="fa-solid fa-code-fork"></i></i></a>
@@ -302,32 +302,4 @@
             .catch(error => console.error('Error!', error.message))
     })
 
-</script>
-<script>
-    // GitHubCalendar(".calendar", "khushbookumari", {
-    //     responsive: true,
-    //     global_stats: false,
-    //     tooltips: true,
-    // });
-
-    // $(".counting").each(function () {
-    //     var $this = $(this),
-    //         countTo = $this.attr("data-count");
-
-    //     $({ countNum: $this.text() }).animate(
-    //         {
-    //             countNum: countTo,
-    //         },
-    //         {
-    //             duration: 3000,
-    //             easing: "linear",
-    //             step: function () {
-    //                 $this.text(Math.floor(this.countNum));
-    //             },
-    //             complete: function () {
-    //                 $this.text(this.countNum);
-    //             },
-    //         }
-    //     );
-    // });
 </script>

@@ -95,7 +95,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-.navresume:hover::after {
+#navresume :hover::after {
   width: 0%;
 }
 /* ////////////////Header Image */
@@ -470,10 +470,10 @@ nav .fa-solid {
   #resumedown {
     display: none;
   }
-  #slidertext {
+  #user-detail-intro {
     font-size: 40px;
   }
-  #header {
+  #home {
     /* background: url(../image/phonefinal\ -\ Copy.png); */
   }
   .header-text {
@@ -567,7 +567,7 @@ nav .fa-solid {
   .contact-right {
     flex-basis: 100%;
   }
-  #header {
+  #home {
     /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
