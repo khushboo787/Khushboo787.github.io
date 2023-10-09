@@ -540,28 +540,6 @@ nav .fa-solid {
 
 /* //////////////////////////////// */
 
-.githubstats {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  gap: 30px;
-  width: 100%;
-}
-.githubmain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  gap: 30px;
-}
-#pro-card{
-  color: black;
-}
-
-
 
 
 
@@ -584,17 +562,28 @@ nav .fa-solid {
 }
   #Status{
       
-      /* border: 2px solid yellow; */
+      
       display: grid;
       grid-template-columns: repeat(2,1fr);
       justify-content: center;
       align-items: center;
-      width: 60%;
+      width: 60%; 
       margin: auto;
-      margin-bottom: 20px;
+       margin-bottom: 20px;
   }
 
   #status2{
 
       margin-left: 20px;
   }
+
+  .Calender{
+
+   
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 15px;
+
+}
