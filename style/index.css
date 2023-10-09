@@ -32,28 +32,21 @@ body{
   box-sizing: border-box; 
 }
 
-
-
-.navresume {
-  background-color: #ff004f;
-  padding: 8px 22px;
-  border-radius: 4px;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-.navresume:hover {
-  color: #fff;
-}
 
 #home {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  /* background: url(../image/homefinal.png); */
+  display: grid;
+  grid-template-columns: 60% 30%;
+  justify-content: space-around;
+  align-items: center;
 }
+
 .nav-link {
   padding: 20px 20px;
 }
@@ -75,7 +68,7 @@ nav {
   margin: auto;
 }
 #logo {
-  color: var(--red);
+  color: var(--bg-color);
   cursor: pointer;
 
   /* margin-left: 22px; */
@@ -86,7 +79,7 @@ nav ul li {
   margin: 10px 20px;
 }
 nav ul li a {
-  color: var(--white);
+  color: darkred;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -111,27 +104,16 @@ nav ul li a:hover::after {
   width: 0%;
 }
 /* ////////////////Header Image */
-#home {
-  display: grid;
-  grid-template-columns: 60% 30%;
-  justify-content: space-around;
-  align-items: center;
-}
+
 #home img {
   height: 100%;
-  /* border-radius: 50%; */
 }
 
 
 #image {
-  /* border: 1px solid red; */
   height: 400px;
   width: 400px;
-  /* border-radius: 10%; */
   overflow: hidden;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 /* Image End ............................................... */
@@ -139,109 +121,28 @@ nav ul li a:hover::after {
 .header-text {
   margin-left: 22px;
   margin-top: 20%;
-  font-size: 30px;
+  font-size: 25px;
 }
 .header-text > h2 {
-  color: var(--red);
+  color: red;
   font-size: 60px;
   margin-top: 16px;
 }
-h1 {
-  color: #ff004f;
+h1{
+  color: red;
 }
 
 /* ////////////////////////About  */
 
-#about {
-  padding: 80px 0px;
-  color: var(--red);
-  width: 90%;
-  margin: auto;
-  margin-bottom: 50px;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  margin: auto;
-}
-/* .about-col-1 {
-  flex-basis: 35%;
-}
-.about-col-1 img {
-  width: 100%;
-  border-radius: 15px;
-} */
-.about-col-2 {
-  width: 100%;
-}
-.sub-title {
-  font-size: 60px;
-  font-weight: 600;
-  margin: auto;
-  text-align: center;
-  font-family: "Arima", cursive;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.tab-titels {
-  display: flex;
-  margin: 20px 0 40px;
-}
-.tab-links {
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-}
-.tab-links::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  background: #ff004f;
-  position: absolute;
-  left: 0px;
-  bottom: -6px;
-  transition: 0.5s;
-}
-.tab-links.active-link::after {
-  width: 50%;
-}
-.tab-contents ul li {
-  list-style: none;
-  margin: 10px 0;
-  font-size: large;
-}
-.tab-contents ul li span {
-  color: var(--span);
-  font-size: 14px;
-}
-.tab-contents {
-  display: none;
-}
-.tab-contents.active-tab {
-  display: block;
-}
-#about p {
-  color: var(--white);
-}
-#about-text {
-  width: 100%;
-  text-align: justify;
-}
 
 #contact {
+  background-size: cover;
   padding: 80px 0px;
 }
 
 #skills {
   padding: 80px 0px;
-  width: 95%;
+  width: 90%;
   margin: auto;
 }
 .skills-card{
@@ -255,8 +156,6 @@ h1 {
   margin-top: 50px;
 }
 .services-list div {
-
-  /* background: var(--icon); */
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -264,7 +163,6 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-
   transition: background 0.5s, transform 0.5s;
 }
 .services-list div i {
@@ -272,9 +170,13 @@ h1 {
   margin-bottom: 20px;
 }
 .services-list div:hover {
-  background: var(--red);
-  /* transform: scale(1.1); */
+  transform: scale(1.1);
   transform: translateY(-8px);
+}
+.sub-title{
+text-align: center;
+font-size: 60px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* ////////////////////////portfolio/////////////// */
 
@@ -291,41 +193,6 @@ h1 {
   margin-top: 50px;
 }
 
-
-.layer a i {
-  margin-top: 10px;
-}
-.btn {
-  display: block;
-  margin: 50px auto;
-  width: fit-content;
-  border: 1px solid #ff004f;
-  padding: 14px 50px;
-  border-radius: 4px;
-  text-decoration: none;
-  color: white;
-  transition: 0.5s;
-}
-#resumedown {
-  padding: 8px 25px;
-  font-weight: 500;
-  font-size: 18px;
-}
-.btn3 {
-  background: #ff004f;
-}
-.btn:hover {
-  background: #ff004f;
-}
-
-.try {
-  width: 70%;
-  /* border: 1px solid black; */
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-}
 
 
 /* ///////////////////////////////////   css for small screen */
@@ -478,12 +345,7 @@ h1 {
     background-image: url(/image/Ranjeet.png);
   }
 }
-#msg {
-  color: #319da0;
-  margin-top: 0px;
-  display: block;
-  text-align: center;
-}
+
 
 /* //////////////////////////////// */
 
@@ -530,7 +392,6 @@ h1 {
  
   .Calender{
 
-   
     background-color: white;
     width: 70%;
     margin: auto;
@@ -587,3 +448,57 @@ h1 {
 
 
   /**************************/
+
+    #about{
+      margin: auto;
+      width: 90%;
+       height: 600px;
+       
+      
+    }
+    #About_Me>h1{
+      font-size:50px;
+    font-family: sans-serif;
+      text-align: center;
+    }
+    #About_Me>p{
+      margin-top: 30px;
+      margin-left: 30px;
+      
+      font-size: 18px;
+    }
+    #About_Me2{
+      margin-top: 20px;
+      width: 60%;
+      margin-left: 30px;
+      display: flex;
+
+    }
+    #About_Me2>div:nth-child(1){
+      width: 30%;
+    }
+    #About_Me2>div:nth-child(2){
+      width: 70%;
+      
+    }
+    #About_Me a > button{
+                width: 20%;
+                margin: auto;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid black;
+                background-color: black;
+                color: white;
+                display: block;
+                margin-top: 40px;
+            }
+
+            #About_Me button:hover{
+                background-color: gray;
+                cursor: pointer;
+                color: black;
+            }
+     
+       
+   
+     
