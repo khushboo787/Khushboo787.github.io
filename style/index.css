@@ -132,13 +132,8 @@ h1{
   color: red;
 }
 
-/* ////////////////////////About  */
+/* ////////////////////////Tech  Skilll  /////////////////////******/
 
-
-#contact {
-  background-size: cover;
-  padding: 80px 0px;
-}
 
 #skills {
   padding: 80px 0px;
@@ -404,6 +399,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 /******************contact section************************/
 
 #contact{
+    background-size: cover;
+    padding: 80px 0px;
   margin-top: 40px;
   /* border: 2px solid green; */
   text-align: center;
