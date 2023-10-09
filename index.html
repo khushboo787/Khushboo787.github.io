@@ -29,7 +29,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#ContactMe">Contact</a></li>
             <li class="referresume"><a id="resume-button-2" id="navresume"class="nav-link resume" 
                     href="Khushboo_Kumari_Resume.pdf"
                     download>Resume</a>
@@ -39,7 +39,6 @@
     <div id="home">
         <div class="nav-link home">
             <div class="header-text">
-                <!-- <p id="location"></p> -->
                 <h3 id="user-detail-name">Hi I'm Khushboo Kumari</h3>
                 <h2  id="user-detail-intro">I'm Java Backend Developer<span ></span></h2>
                 <a  id="resume-button-2"  class="btn btn2 referresume1" 
@@ -251,44 +250,7 @@
           </div>
         </div>
     
-    <!-- ////////////////Contact////////// -->
-    <!-- <div id="contact">
-        <div class="nav-link contact">
-            <h1 class="sub-title">Contact</h1>
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub.titale">
-                        Contact Me
-                    </h1>
-                    <p id="contact-email"> <i class="fa-solid fa-paper-plane"></i>adhirajha204@gmail.com</p>
-                    <p  id="contact-phone" > <i class="fa-sharp fa-solid fa-phone"></i>+91 9026729823</p>
-                    <div class="social-icons">
-                        <a  id="contact-linkedin" target="_blank" href="https://www.linkedin.com/in/khushboo-kumari-3a6641256/"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a  id="contact-github" target="_blank" href="https://github.com/khushboo787"><i
-                                class="fa-brands fa-github"></i></i></a>
-                        <a target="_blank" href="https://github.com/khushboo787/Khushboo787.github.io"><i
-                                class="fa-solid fa-code-fork"></i></i></a>
-                    </div>
-                    <a   id="resume-button-1" class="btn btn2 referresume2"
-                        href="Khushboo_Kumari_Resume.pdf"
-                        download>Resume</a>
-                </div>
-                <div class="contact-right">
-                    <form class="loading" name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <textarea minlength="5" required name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <span id="msg"></span>
-                        <button class="btn btn2" type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright © Khushboo.<i class="fa-solid fa-heart"></i> </p>
-        </div> -->
-
+    
       <!-- Footer Section -->
       <div id="ContactMe">
         <h1>Contact Me</h1>
@@ -353,23 +315,5 @@
     });
 
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxI1_DecmZUSKi-2iFueb-3dAxuFkQejHwsiWCavksgxF5sT6F2tWyHYufmwTgJPxD7zA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg");
-
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        msg.innerText = "Sending..."
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                msg.innerText = "Message sent successfully"
-
-                setTimeout(() => {
-                    msg.innerText = "";
-                }, 4000)
-                form.reset();
-            })
-            .catch(error => console.error('Error!', error.message))
-    })
-
+    
 </script>
