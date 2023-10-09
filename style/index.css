@@ -5,7 +5,7 @@
   padding: 0px;
   font-family: "Poppins";
   box-sizing: border-box;
-  animation-delay: 2s;
+  
 }
 
 .navresume {
@@ -17,25 +17,11 @@
 html {
   scroll-behavior: smooth;
 }
-:root {
-  --red: #ff004f;
-  --black: #080808;
-  --white: #fff;
-  --span: #fff;
-  --gray: #262626;
-  --icon: #262626;
-  --work: #000;
-  --workarea: #262626;
-  --image: #fff;
-}
+
 .navresume:hover {
   color: #fff;
 }
-body {
-  background: var(--black);
-  color: var(--white);
-  /* position: relative; */
-}
+
 #home {
   width: 100%;
   height: 100vh;
@@ -232,6 +218,10 @@ h1 {
   width: 95%;
   margin: auto;
   /* margin-bottom: 30px; */
+}
+.skills-card{
+  border: 2px solid blue;
+  background-color: #319da0;
 }
 .services-list {
   display: grid;
@@ -570,3 +560,41 @@ nav .fa-solid {
 #pro-card{
   color: black;
 }
+
+
+
+
+
+
+#Git{
+
+  /* border: 2px solid green; */
+  text-align: center;
+  margin-top: 50px;
+}
+
+#Git h1{
+
+  margin-bottom: 30px;
+}
+
+#Git p{
+
+  align-items: space-between;
+}
+  #Status{
+      
+      /* border: 2px solid yellow; */
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+
+  #status2{
+
+      margin-left: 20px;
+  }
