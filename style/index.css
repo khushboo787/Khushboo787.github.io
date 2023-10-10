@@ -85,44 +85,55 @@ nav ul li a:hover::after {
 
 #home {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
-  border: 3px solid blue;
+  margin-bottom: 40px;
 }
 #home>div{
-  border: 1px solid red;
+  
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+ 
 }
 #home>div>div:nth-child(1){
-  border: 1px solid green;
   width: 50%;
   margin-top: 40px;
-  height: 300px;
 }
 #home>div>div:nth-child(2){
-  margin-top: 60px;
-  border: 1px solid darkblue;
-  width: 30%;
+  margin-top: 80px;
+  width: 40%;
   
 }
-#image {
-  width: 400px;
-  overflow: hidden;
-} 
+#home img{
+  width: 100%;
+  border-radius: 50px;
+}
 
 .header-text {
-  margin-left: 22px;
-  margin-top: 20%;
   font-size: 25px;
+  font-family: serif;
 }
 .header-text > h2 {
-  color: red;
-  font-size: 60px;
+  color: darkblue;
+  font-size: 50px;
   margin-top: 16px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+#resume-link-2{
+  text-decoration: none;
+  color: white;
+  
+}
+#resume-button-2{
+  width: 120px;
+  height: 26px;
+  background-color: darkcyan;
+  margin-top: 40px;
+  color: #ff4d05;
+  border-radius: 20px;
+  border: none;
+}
 
 /* ////////////////////////Tech  Skilll  /////////////////////******/
 
@@ -474,7 +485,27 @@ margin-bottom: 30px;
 
     #about{
       margin: auto;
-      width: 90%;
+      width: 100%;
+     
+
+    }
+    #me{
+      font-size: 50px;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-bottom: 30px;
+    }
+    #image{
+      width: 80%;
+    }
+    #about>div{
+      display: flex;
+      justify-content: center;    
+    }
+    #about>div>div:nth-child(2){
+      
+      width:60%;
+      margin-left: 50px;
     }
     #skillAbout>h1{
     color: darkblue;
@@ -496,7 +527,6 @@ margin-bottom: 30px;
       margin-left: 30px;
       color: darkslategray;
       font-size: 18px;
-      margin-bottom: 40px;
     }
     #About_Me2{
       margin-top: 20px;
