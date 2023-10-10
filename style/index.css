@@ -377,7 +377,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
 }
  
-  .Calender{
+.Calender{
 
     background-color: white;
     width: 70%;
@@ -397,12 +397,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
  background-color: gray;
   padding-top: 50px;
-
   padding-bottom: 50px;
-
   line-height: 25px;
   word-spacing: 3px;
-
 }
 
 #contact h1{
