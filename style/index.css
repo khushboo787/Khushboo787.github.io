@@ -122,14 +122,15 @@ html {
 }
 #resume-link-2{
   text-decoration: none;
-  color: white;
+  
 }
 #resume-button-2{
+  color: white;
   width: 145px;
  padding: 3px;
   background-color: darkcyan;
   margin-top: 40px;
-  color: #ff4d05;
+  /* color: #ff4d05; */
   border-radius: 20px;
   border: none;
 }
