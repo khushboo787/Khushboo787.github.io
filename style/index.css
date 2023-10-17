@@ -123,11 +123,10 @@ html {
 #resume-link-2{
   text-decoration: none;
   color: white;
-  
 }
 #resume-button-2{
-  width: 120px;
-  height: 26px;
+  width: 145px;
+ padding: 3px;
   background-color: darkcyan;
   margin-top: 40px;
   color: #ff4d05;
