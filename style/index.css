@@ -215,6 +215,9 @@ margin-bottom: 30px;
       width: 100%;
       border-radius: 10px;
   }
+  #desc1{
+    width: 60%;
+  }
   .project-card > div button{
 
       width: 30%;
