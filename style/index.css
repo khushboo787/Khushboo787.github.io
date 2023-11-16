@@ -24,8 +24,9 @@
 
 body{
 
-  background-color: rgb(219, 219, 219);
+  background-color: lightcyan;
   color: rgb(0, 0, 0);
+  /* color: white; */
   margin: 0px;
   padding: 0px;
   font-family:Arial, Helvetica, sans-serif;
@@ -42,7 +43,7 @@ html {
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
-  background-color: grey;
+  background-color: rgb(80, 110, 110);
   padding: 10px 20px;
 }
 #logo {
@@ -106,16 +107,18 @@ html {
   
 }
 #home img{
-  width: 100%;
-  border-radius: 50px;
+ width: 100%;
+  border-radius: 10px;
+  
 }
 
 .header-text {
   font-size: 25px;
   font-family: serif;
 }
+
 .header-text > h2 {
-  color: darkblue;
+  color: dodgerblue;
   font-size: 50px;
   margin-top: 16px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -128,7 +131,7 @@ html {
   color: white;
   width: 155px;
  padding: 3px;
-  background-color: darkcyan;
+  background-color: blue;
   margin-top: 40px;
   /* color: #ff4d05; */
   border-radius: 20px;
@@ -144,7 +147,7 @@ html {
   margin: auto;
 }
 .skills-card{
-  background-color: #319da0;
+  background-color:var(--second-bg-color);
 }
 .services-list {
   display: grid;
@@ -448,7 +451,7 @@ margin-bottom: 30px;
     padding: 80px 0px;
   margin-top: 40px;
   text-align: center;
- background-color: gray;
+ background-color: rgb(80, 110, 110);
   padding-top: 50px;
   padding-bottom: 50px;
   line-height: 25px;
