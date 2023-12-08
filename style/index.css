@@ -88,25 +88,23 @@ html {
   width: 100%;
   height: 80vh;
   background-size: cover;
-  margin-bottom: 40px;
+  
 }
 #home>div{
-  
   display: flex;
+height: 100%;
   align-items: center;
   justify-content: center;
  
 }
 #home>div>div:nth-child(1){
-  width: 50%;
-  margin-top: 40px;
+  width: 40%;
 }
 #home>div>div:nth-child(2){
-  margin-top: 80px;
-  width: 40%;
-  
+  width: 50%;
 }
 #home img{
+ 
  width: 100%;
   border-radius: 10px;
   
@@ -139,7 +137,9 @@ html {
 }
 
 /* ////////////////////////Tech  Skilll  /////////////////////******/
-
+.sub-title{
+  color: navy;
+}
 
 #skills {
   padding: 80px 0px;
@@ -148,7 +148,9 @@ html {
 }
 .skills-card{
   background-color:var(--second-bg-color);
+  color: white;
 }
+
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -243,44 +245,8 @@ margin-bottom: 30px;
       background-color: gray;
   }
 
-
-
-/* ///////////////////////////////////   css for small screen */
-
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
-  .layer {
-    height: 30%;
-  }
-  .layer h3 {
-    font-size: 16px;
-  }
-  .layer p {
-    font-size: 12px;
-  }
-  .layer i {
-    font-size: 14px;
-  }
-}
-@media screen and (min-device-width: 200px) and (max-device-width: 480px) {
-  .layer {
-    height: 55%;
-  }
-  .layer h3 {
-    font-size: 16px;
-  }
-  .layer p {
-    font-size: 12px;
-  }
-  .layer i {
-    font-size: 14px;
-  }
-}
-
 @media only screen and (max-width: 800px) {
-  nav {
-    /* background-color: transparent; */
-    border-radius: 0;
-  }
+  
   #resumedown {
     display: none;
   }
@@ -502,7 +468,13 @@ margin-bottom: 30px;
       margin-bottom: 30px;
     }
     #image{
-      width: 80%;
+     width: 18%;
+   
+    }
+    #image>img{
+      width: 100%;
+      border-radius: 12px;
+      
     }
     #about>div{
       display: flex;
@@ -513,12 +485,7 @@ margin-bottom: 30px;
       width:60%;
       margin-left: 50px;
     }
-    #skillAbout>h1{
-    color: darkblue;
-    }
-    #education>h1{
-      color: darkblue;
-      }
+    
     #About_Me>h1{
       font-size:50px;
     font-family: sans-serif;
@@ -568,4 +535,215 @@ margin-bottom: 30px;
      
        
    
-     
+     /* Navbar Responsiveness */
+
+@media (max-width:1480px){
+  header{
+      padding: 12px 2.5%;
+      transition: .1s;
+  }
+  header.sticky{
+      padding: 10px 2.5%;
+      transition: .1s;
+  }
+}
+
+/* Navbar responsiveness 2 */
+
+
+@media (max-width:940px){
+
+  #menu-icon{
+      display: block;
+  }
+  #sidemenu{
+      position: absolute;
+      top: -1000px;
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-color);
+      text-align: left;
+      transition: all .45s ease;
+
+  }
+  .navlist a{
+      display: block;
+      margin: 17px;
+      font-size: 20px;
+      transition: all .45s ease;
+      color: var(--text-color);
+  }
+  .navlist a:hover{
+      color: var(--main-color);
+  }
+  .navlist a.active{
+      color: var(--text-color);
+  }
+  .navlist.open{
+      top:100%;
+  }
+  #github-streak-stats {
+      display: grid;
+      
+    }
+  .calendar{
+      width: 100%;
+  }
+  .st1{
+      width: 100%;
+  }
+
+  #Top{ 
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      
+ }
+
+ #Top_Right{
+
+  margin-top: 100px;
+  text-align: center;
+
+}
+
+#gif{
+
+  width: 80%;
+  margin: auto;
+}
+
+  #Mid{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+  }
+
+      #Mid_Left{
+
+          width: 60%;
+          margin: auto;
+      }
+
+      #Mid_Right{
+
+
+          margin-left: 80px;
+          margin-right: 80px;
+      }
+
+      #Status{
+          
+
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          width: 80%;
+      }
+      #Calender{
+  
+          /* border: 2px solid yellow; */
+          background-color: white;
+          width: 100%;
+          margin: auto;
+  
+      }
+  
+      #status2 img{
+  
+          width: 100%;
+      }
+
+      .Project a > button{
+
+
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-top: 40px;
+      }
+}
+
+@media (max-width:700px){
+
+  #Top_Right  {
+      padding-right: 0px;
+  }
+
+  #Top_Right gif{
+
+
+  }
+
+
+  #Mid_Left{
+
+      width: 100%;
+      margin: auto;
+      margin-left: 0px;
+      text-align: center;
+  }
+
+  #Mid_Right{
+
+      margin-right: 0px;
+      margin-top: 30px;
+  }
+
+  #Mid_Left > img{
+      width: 70%;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-radius: 500px;
+  }
+
+  #Mid2{
+
+      width: 95%;
+      border-radius: 20%;
+      
+  }
+
+      #Icons{
+
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 25px;
+          padding-bottom: 30px;
+      }
+
+          #Icons > img{
+
+              margin: auto;
+              width: 40%;
+          }
+  
+          #Projects{
+
+              width: 100%;
+              
+          }
+              .Project{
+      
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  text-align: center;
+      
+                  border-radius: 10px;
+                  padding: 5px;
+                  padding-bottom: 20px;
+                  margin-bottom: 30px;
+              }
+
+              .Project ul{
+
+                  text-align: start;
+              }
+
+              .Project a > button{
+
+
+                  margin-left: 20px;
+                  margin-right: 20px;
+                  margin-top: 40px;
+              }
+
+}
