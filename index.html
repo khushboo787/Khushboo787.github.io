@@ -15,41 +15,49 @@
 
 <body>
     
-   
-    <div id="nav-menu">
-        <h1 id="logo" class="testing">KHUSHBOO</h1>
-        <ul id="sidemenu">
+      <div id="nav-menu">
+        <h1 id="logo" class="testing">KHUSHBOO</h1>       
+        <ul id="sidemenu">       
             <li><a href="#home" class="nav-link home">Home</a></li>
             <li><a href="#about" class="nav-link about">About</a></li>
             <li><a href="#skills" class="nav-link skills">Skills</a></li>
             <li><a href="#projects"class="nav-link projects">Projects</a></li>
             <li><a href="#contact"class="nav-link contact">Contact</a></li>
             <li><a id="resume-button-1"  class="nav-link resume"
-                    href="Khushboo_Kumari_Resume.pdf" download >Resume</a>
+                    href="Khushboo_Kumari_Resume.pdf" onclick="downl()" download >Resume <i class="fas fa-download"></i></a>
             </li>
         </ul>
-    </div>
+        <div id="menu-icon">&#9776;</div>
+      </div>
+
+   
+  
+
+
+
+    
+   
+   
     
 
      <!-- Home Section -->
-
-    <div id="home">
-        <div>
-         
-            <div class="header-text">            
-                <h3>Java Backend Developer</h3>
-                <h2  id="user-detail-name">Hi I'm Khushboo Kumari<span ></span></h2>
-              <a href="./Khushboo_Kumari_Resume.pdf"  id="resume-link-2"> 
-                  <button id="resume-button-2">Download Resume <br> <i class="fa fa-download"></i></button>
-              </a>
-            </div>
-            <div >            
-              <img src="https://user-images.githubusercontent.com/74038190/250967618-de30015f-dc5f-4ecf-a49b-ccd2b89776e4.gif" alt="" class="home-img">             
+     <div id="home">
+      <div>       
+          <div  class="header-text">            
+              <h3>Java Backend Developer</h3>
+              <h2  id="user-detail-name">Hi I'm Khushboo Kumari<span ></span></h2>
+            
+              <a href="Khushboo_Kumari_Resume.pdf"  target="_blank"
+             onclick="downl()" download="Khushboo_Kumari_Resume" title="click to download" id="resume-button-2"> 
+                 Resume   <i class="fa fa-download"></i>
+            </a>
           </div>
-           
+          <div >            
+            <img src="https://user-images.githubusercontent.com/74038190/250967618-de30015f-dc5f-4ecf-a49b-ccd2b89776e4.gif" alt="" class="home-img">             
         </div>
-    </div>
-
+         
+      </div>
+     </div>
 
     <!-- About Section -->
     <div id="about" class="about section">
@@ -101,21 +109,9 @@
                  
                    </div>   
                 </div>  
-                
-               
-
             </div>
-
-          
-
-
-
            </div>
-            
-
-
-        </div>
-        
+        </div>    
     </div>
 
    
@@ -285,16 +281,16 @@
                   </a>
                 </div>
 
-                <div id="desc1">
+                <div>
                   <img height="340px"  src="./image/UP-Skill_Image.PNG" alt="" />
                 </div>
             </div>
 
             <div  class="project-card">
-              <div >
+              <div>
                 <img src="./image/discord-app.PNG" alt="" />
               </div>
-              <div id="desc1">
+              <div >
                 <h2 class="project-title">Discord-Application</h2>
                 <p class="project-description">
                   A simple Spring Boot application to manage Discord-like chat interactions, with Users, Channels, Messages, and Reactions.
@@ -308,7 +304,7 @@
                   <button>GitHub</button>
                 </a>
                 <a href="https://drive.google.com/file/d/18IYU2184_KkC-bxoPHTTs0338nENqR-C/view?usp=sharing" target="_blank"  class="project-deployed-link">
-                  <button>Presentation Video</button>
+                  <button>Video</button>
                 </a>
               </div>
 
@@ -337,8 +333,8 @@
                   </a>
                 </div>
 
-                <div id="desc1">
-                  <img src="https://github.com/khushboo787/actual-shoes-7533/raw/main/Frontend/assests/Screenshot%20(250).png" alt="" />
+                <div>
+                  <img src="https://github.com/khushboo787/actual-shoes-7533/raw/main/Frontend/assests/Screenshot%20(250).png"  alt="" />
                 </div>
             </div>
 
@@ -415,12 +411,43 @@
 
 
   <script>
+window.onscroll = function() {
+    makeNavbarSticky();
+};
+
+function makeNavbarSticky() {
+    var navbar = document.getElementById("nav-menu");
+    var sticky = navbar.offsetTop;
+    if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+document.getElementById("menu-icon").onclick = function() {
+    toggleMenu();
+};
+
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu").getElementsByTagName("ul")[0];
+    menu.classList.toggle("show");
+}
+
+
 
     const resumeButton = document.getElementById("resume-button-2");
     resumeButton.addEventListener("click", function() {
-        window.open("https://drive.google.com/file/d/1XeYFxxmen0CLAkXI_kcZfY1qd0qAcbTa/view?usp=sharing");
+        window.open("https://drive.google.com/file/d/1NN1xStY6cJ0pteXU5AYGiA3HiAnZCpbk/view?usp=sharing");
     });
+    // const resumeButton = document.getElementById("resume-button-1");
+    // resumeButton.addEventListener("click", function() {
+    //     window.open("https://drive.google.com/file/d/1NN1xStY6cJ0pteXU5AYGiA3HiAnZCpbk/view?usp=sharing");
+    // });
 
+ function downl(){
+  window.open("https://drive.google.com/file/d/1NN1xStY6cJ0pteXU5AYGiA3HiAnZCpbk/view?usp=sharing");
+}
 
   
 </script>  
