@@ -37,55 +37,7 @@ html {
 
 
 
-#Git{
 
-  /* border: 2px solid green; */
-  text-align: center;
-  margin-top: 50px;
-}
-
-/* #Git h1{
-
-  margin-bottom: 30px;
-}
-
-#Git p{
-
-  align-items: space-between;
-}
-  #Status{
-      
-      
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      justify-content: center;
-      align-items: center;
-      width: 60%; 
-      margin: auto;
-       margin-bottom: 20px;
-  }
-
-  #status2{
-
-      margin-left: 20px;
-  }
-  #status3{
-
-    margin-bottom: 20px;
-}
- 
-.Calender{
-
-    background-color: white;
-    width: 70%;
-    margin: auto;
-    border-radius: 20px;
-    padding-top: 15px;
-
-} */
-
-
-   
 
 /*************NAVBAR**********/
 
@@ -99,13 +51,13 @@ html {
   justify-content: space-between;
   width: 100%;
   background-color: #333;
-  padding: 10px 20px;
+  padding: 10px 30px;
+  
   transition: background-color 0.3s ease;
 }
 
 #logo {
   color: white;
-  
   cursor: pointer;
   margin: 0; 
 }
@@ -125,7 +77,7 @@ html {
 }
 
 #sidemenu li {
-  margin: 0 10px;
+  margin: 0 16px;
 }
 
 #sidemenu li a {
@@ -192,53 +144,78 @@ html {
 
 
 /************    HOME SECTION ************************/
+
+
 #home {
   width: 100%;
   margin-top: 80px;
+  margin-bottom: 40px;
   background-size: cover;
   padding: 20px;
   box-sizing: border-box;
 }
 
- #home>div {
+#home>div {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-   align-items: center;
+  flex-direction: row; 
+  align-items: center;
 }
 
-#home>div>div:nth-child(1),#home>div>div:nth-child(2) {
-  width: 45%;
+#home>div>div {
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto; 
+  box-sizing: border-box;
 }
-
 
 #home img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 10px; 
 }
 
-
-
+.header-text {
+  /* text-align: center; */
+  margin-left: 30px;
+}
+.header-text > h3{
+  font-size: 29px;
+}
 .header-text > h2 {
   color: dodgerblue;
-  font-size: 28px;
+  font-size: 42px;  
   margin-top: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 20px;
 }
 
-
-
 #resume-button-2 {
   color: black;
   padding: 10px;
- font-size: 16px;
+  font-size: 16px;
   background-color: teal;
-
-   border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;  
+  display: inline-block; 
+  margin-top: 10px; 
 }
 
+@media (max-width: 768px) {
+  
+  #home{
+    margin-bottom: 30px;
+  }
+  #home>div {
+    align-items: stretch;  
+  }
 
+  #home>div>div {
+    width: 100%;
+  }
+
+  .header-text > h2 {
+    font-size: 20px;
+  }
+}
 
 /**************  A B O U T ************************/
 #about {
@@ -354,9 +331,6 @@ color: white;
     align-items: center;
     width: 12%;
     margin: auto;
-   
-
-
 }
 
 #ContactButtons img:hover{
@@ -417,9 +391,9 @@ color: white;
     flex-direction: column;
   }
   #home>div>div:nth-child(1),#home>div>div:nth-child(2) {
-    width: 65%;
+    width: 75%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
   }
   #about>div {
     flex-direction: column;
@@ -571,27 +545,25 @@ color: white;
   }
 }
 
-
-#Git h1 {
-  margin-bottom: 30px;
+#Git{
+  margin-top: 50px;
+  text-align: center;
 }
 
-#Git p {
-  align-items: space-between;
-}
+
 
 #Status {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Single column for small screens */
+  grid-template-columns: repeat(1, 1fr); 
   justify-content: center;
   align-items: center;
-  width: 80%; /* Adjust width for smaller screens */
+  width: 60%; 
   margin: auto;
   margin-bottom: 20px;
 }
 
 #status2 {
-  margin-left: 0; /* Reset margin for small screens */
+  margin-left: 0; 
 }
 
 #status3 {
@@ -600,7 +572,7 @@ color: white;
 
 .Calender {
   background-color: white;
-  width: 80%; /* Adjust width for smaller screens */
+  width: 80%; 
   margin: auto;
   border-radius: 20px;
   padding-top: 15px;
